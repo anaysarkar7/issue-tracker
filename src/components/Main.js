@@ -12,11 +12,9 @@ const Main = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const [issues, setIssues] = useState([]);
-  const [repoOwner, setRepoOwner] = useState("anaysarkar7");
-  const [repoName, setRepoName] = useState("doremi-subscription");
-  const [githubToken, setGithubToken] = useState(
-    "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"
-  );
+  const [repoOwner, setRepoOwner] = useState("");
+  const [repoName, setRepoName] = useState("");
+  const [githubToken, setGithubToken] = useState("");
 
   const fetchData = async () => {
     var myHeaders = new Headers();
